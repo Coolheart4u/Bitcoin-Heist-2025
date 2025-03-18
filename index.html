@@ -1,0 +1,91 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello 2025</title>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<header>
+        <h1><i class="fa fa-bitcoin" style="font-size:48px;color:red"></i>Bitcoins Heist<i class="fa fa-bitcoin" style="font-size:48px;color:red"></i></h1> 
+</header>
+
+    <section class="briefing">
+        <h2>North Korea steals $1.5B in cryptocurrency</h2>
+        <h2>The process</h2> 
+    </section>
+
+<section class="section1">
+How does a nuclear-armed pariah nation, the 🇰🇵 #DPRK 🇰🇵, steal and launder $1.5B?
+Thanks to ongoing investigations, we now know the details...
+</section>
+
+<section class="section2">
+The #Bybit #cryptocurrency heist, by North Korean state-affiliated group UNC4899 
+(better known as #Lazarus Group), was enabled by a supply chain attack
+against a company called "Safe{Wallet}", who make cryptocurrency infrastructure 
+for secure multi-signature transactions (and whose name looks suspiciously like a CTF flag!!)
+</section>
+
+<h2>Here's the sequence of events, from a preliminary report
+     and a blockchain analysis:</h2>
+
+<ul class="section3">
+<li> <i class="fa fa-bitcoin" style="font-size:18px;color:red"></i> Feb 2, 2025: attackers registered getstockprice[.]com via Namecheap</li>
+<li> <i class="fa fa-bitcoin" style="font-size:18px;color:red"></i>Feb 4, 2025 (08:55:45 UTC): a Safe{Wallet} developer's macOS workstation compromised via "MC-Based-Stock-Invest-Simulator-main" Docker project located in ~/Downloads/, which established C2 communication with getstockprice[.]com</li>
+<li> <i class="fa fa-bitcoin" style="font-size:18px;color:red"></i> Feb 5, 2025 (08:36:51 UTC): initial access to Safe{Wallet} AWS environment using hijacked session tokens from developer</li>
+<li> <i class="fa fa-bitcoin" style="font-size:18px;color:red"></i> Feb 5, 2025 (14:06:25 UTC): attackers ⛔️unsuccessfully⛔️ attempted to register their own MFA device to maintain persistent access</li>
+<li> <i class="fa fa-bitcoin" style="font-size:18px;color:red"></i> Feb 5-17, 2025: extensive reconnaissance conducted in AWS environment, from ExpressVPN IP addresses with User-Agent strings containing "distrib#kali.2024"</li>
+<li> <i class="fa fa-bitcoin" style="font-size:18px;color:red"></i> Feb 17, 2025 (03:22:44 UTC): C2 activity established in AWS environment using the Mythic Poseidon Golang agent</li>
+<li> <i class="fa fa-bitcoin" style="font-size:18px;color:red"></i> Feb 19, 2025 (15:29:25 UTC): malicious JavaScript code injected into Safe{Wallet}'s AWS S3 bucket, designed to hijack transaction signing processes.</li>
+<li> <i class="fa fa-bitcoin" style="font-size:18px;color:red"></i>Feb 21, 2025 (14:13:35 UTC): Bybit exploit transaction executed during a routine ETH cold wallet transfer, redirecting 401,347 ETH ($1.4B) and some other cryptocurrency tokens</li>
+<li> <i class="fa fa-bitcoin" style="font-size:18px;color:red"></i> Feb 21, 2025 (14:15:13 UTC): malicious JS code removed from the website to hide evidence</li>
+<li> <i class="fa fa-bitcoin" style="font-size:18px;color:red"></i> Feb 21, 2025 (14:16:11 UTC): 58 seconds later, heist completed with funds exfiltrated from Bybit</li>
+<li> <i class="fa fa-bitcoin" style="font-size:18px;color:red"></i> Feb 23, 2025: $160M laundered (mostly via THORchain) 💸</li>
+<li> <i class="fa fa-bitcoin" style="font-size:18px;color:red"></i> Feb 26, 2025: over $400M laundered (total) 💸</li>
+<li> <i class="fa fa-bitcoin" style="font-size:18px;color:red"></i> Mar 3, 2025: $1.4B laundered 💸, with only $40M recovered by freezing known accounts</li>
+</ul>
+
+<section class="section4">
+We do not know when the laundered ETH will be converted to fiat (eg. USD). 
+Let's hope they spend it on food, not nukes.
+</section>
+
+<br>
+<h1>Lessons learned so far:</h1>
+<br>
+<section class="section5">
+<ul>
+<li> MFA works! The attackers had to find a workaround, by stealing AWS session tokens</li>
+<li> Third-party integrations create risk, even if your internal security is solid</li>
+<li> Infrastructure-level monitoring is crucial - monitoring of S3 bucket manipulations could have improve the chance of detection</li>
+<li> Authentication and authorization, no matter how technically sophisticated, can still be defeated by tricking the people who operate it, in this case the Safe{Wallet} developer and the people authorizing the Bybit transactions</li>
+<li> If you are operating a cryptocurrency service, you can expect a virtual visit from the DPRK - act accordingly!</li>
+</ul>
+</section>
+<br>
+
+<section class="section8">
+    <iframe width="730" height="415" 
+    src="https://www.youtube.com/embed/gpLYnKC3mGk?si=ENBbdDQtND__Mb3P"
+     title="YouTube video player" frameborder="0" allow="accelerometer; 
+     autoplay; clipboard-write; encrypted-media; gyroscope; 
+     picture-in-picture; web-share" 
+     referrerpolicy="strict-origin-when-cross-origin" 
+     allowfullscreen>
+    </iframe>
+</section>
+
+<br>
+<section class="section6">Important note: no zero days were burned during the creation of this heist. Author: Yiannakis Papageorgiou 2025</section>
+
+
+    <!-- Link to JavaScript -->
+   
+</body>
+</html>
