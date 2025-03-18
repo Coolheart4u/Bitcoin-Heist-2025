@@ -1,0 +1,96 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    font-family: 'Sofia', sans-serif;
+    background-color: #f8f9fa;
+    color: #171819;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Header Styles */
+header {
+    background-color:#3b1db4; /* Bootstrap primary color */
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    margin: 15px 0;
+}
+
+h1 {color:#f8f9fa;
+    background-color:#3b1db4;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    margin: 15px 0;}
+
+h2 {
+    font-size: 2.5rem;
+    color: #3b1db4; 
+    text-align: center;/* Bootstrap primary color */
+}
+
+/* Section Styles */
+.section1, .section2, .section4, .section6, .section8{
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    margin: 15px 0;
+}
+
+h2 {
+    font-size: 1.75rem;
+    color: #3b1db4;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.section3 li {
+    background: #e9ecef;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Section with Lessons */
+.section5 {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    body {
+        padding: 10px;
+    }
+    li {
+        font-size: 0.9rem;
+    }
+}
